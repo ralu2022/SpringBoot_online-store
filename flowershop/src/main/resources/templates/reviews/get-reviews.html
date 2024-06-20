@@ -1,0 +1,27 @@
+<!-- Template Thymeleaf -->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Your review</title>
+</head>
+<body>
+
+
+<br>
+<table border="1">
+    <thead>
+    <td>User </td>
+    <td>ID </td>
+    <td>Message</td>
+    <td>Date</td>
+    </thead>
+    <tr th:each="review : ${reviews}">
+        <td><p th:text="${review.userName}"></p></td>
+        <td><p th:text="${review.id}"></p></td>
+        <td><p th:text="${review.reviewMsg}"></p></td>
+        <td><p th:text="${review.date}"></p></td>
+    </tr>
+</table>
+</body>
+</html>

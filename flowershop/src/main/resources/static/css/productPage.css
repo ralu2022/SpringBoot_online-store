@@ -1,0 +1,7 @@
+body {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background: #41D4F1;
+    background: radial-gradient(at left top, #41D4F1, #95C2D4);
+}

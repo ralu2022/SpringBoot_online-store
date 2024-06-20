@@ -1,0 +1,18 @@
+<!-- Template Thymeleaf -->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>review</title>
+</head>
+<body>
+<form th:action="@{/reviews/your-review}" th:object="${review}" method="post">
+    <label for="userName">User Name</label>
+    <input id="userName" type="text" th:field="*{userName}"/>
+    <label for="reviewMsg">Your review message</label>
+    <input id="reviewMsg" type="text" th:field="*{reviewMsg}"/>
+    <button type="submit">SEND!</button>
+</form>
+</body>
+</html>

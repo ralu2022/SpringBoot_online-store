@@ -1,0 +1,6 @@
+body {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to right top, #6384b5, #7e73a4, #8d648a, #91596d, #895252);
+}
